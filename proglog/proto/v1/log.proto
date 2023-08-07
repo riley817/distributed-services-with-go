@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_DIRECTORY_MATCH
+package log.v1;
+
+option go_package = "github.com/riley817/proglog/proto/v1";
+
+message Record {
+  bytes value = 1;
+  uint64 offset = 2;
+}
